@@ -4,8 +4,6 @@ import Head from "next/head";
 import { getProviders, signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 
-import Loader from "../../components/Loader";
-
 const Signin = ({ provider }) => {
 	const { data: session } = useSession();
 	const router = useRouter();
@@ -15,8 +13,6 @@ const Signin = ({ provider }) => {
 			router.push("/");
 		}
 	}, [session]);
-
-	if (session) return <Loader />;
 
 	return (
 		<>
