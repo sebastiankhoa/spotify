@@ -15,9 +15,9 @@ export default function Home() {
 		},
 	});
 
-	// if (status === "loading") {
-	// 	return <Text>Loading....</Text>;
-	// }
+	if (status === "loading") {
+		return <Text>Loading....</Text>;
+	}
 	// console.log({ session });
 	return (
 		<Flex h={{ base: "150vh", md: "120vh" }} direction="column" bgGradient="linear(to-b,green,orange)">
