@@ -11,12 +11,12 @@ export default function Home() {
 	const { status, data: session } = useSession({
 		required: true,
 		onUnauthenticated() {
-			router.push("/");
+			router.push("/auth/signin");
 		},
 	});
 
 	if (status === "loading") {
-		return <Text>Loading....</Text>;
+		return <Loader />;
 	}
 	// console.log({ session });
 	return (
