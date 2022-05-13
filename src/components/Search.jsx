@@ -22,7 +22,7 @@ const Search = ({ searchTerm, setSearchTerm }) => {
 					value={searchTerm}
 					border="none"
 					_focus={{ border: "none" }}
-					_placeholder={{ color: "white", fontWeight: "700" }}
+					_placeholder={{ color: "white", fontWeight: "700", fontSize: "13px" }}
 					onChange={(e) => setSearchTerm(e.target.value)}
 				/>
 			</Flex>

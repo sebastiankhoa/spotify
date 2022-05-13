@@ -23,8 +23,8 @@ const Poster = ({ song, chooseTrack }) => {
 	return (
 		<Flex
 			mx="auto"
-			height="340px"
-			w={{ base: "280px", md: "260px", lg: "230px", "2xl": "280px" }}
+			height={{ base: "240px", md: "340px" }}
+			w={{ base: "160px", md: "260px", lg: "230px", "2xl": "280px" }}
 			cursor="pointer"
 			pos="relative"
 			overflow="hidden"

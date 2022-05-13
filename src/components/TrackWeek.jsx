@@ -10,13 +10,13 @@ import Track from "./Track";
 
 const TrackWeek = ({ searchResult, newRelease, chooseTrack }) => {
 	return (
-		<Flex w={{ base: "350px", md: "550px", lg: "780px" }} direction="column">
+		<Flex w={{ base: "350px", md: "550px", lg: "780px", xl: "1000px" }} direction="column">
 			<Text fontWeight="700" fontSize="16pt" mb="5" textDecoration="underline" color="gray.700">
 				{searchResult.length === 0 ? "Những bài hát hay nhất của tuần: " : "Những bài hát tìm kiếm được"}
 			</Text>
 			<Flex
 				direction="column"
-				h="550px"
+				h={{ base: "420px", md: "550px" }}
 				mx="2"
 				rounded="3xl"
 				bg="blackAlpha.300"

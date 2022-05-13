@@ -9,15 +9,15 @@ const BeautyBox = ({ searchResult, newRelease, chooseTrack }) => {
 		<SimpleGrid
 			spacingX="1px"
 			spacingY="10"
-			columns={{ base: 1, md: 2, lg: 4 }}
+			columns={{ base: 2, md: 2, lg: 4, "2xl": 5 }}
 			overflow="scroll"
 			h="420px"
 			my="5"
 			className="scrollbar"
 		>
 			{searchResult.length === 0 /*Neu khong co search se hien new release  */
-				? newRelease.slice(0, 8).map((song) => <Poster key={song.id} song={song} chooseTrack={chooseTrack} />)
-				: searchResult.slice(0, 8).map((song) => <Poster key={song.id} song={song} chooseTrack={chooseTrack} />)}
+				? newRelease.slice(0, 10).map((song) => <Poster key={song.id} song={song} chooseTrack={chooseTrack} />)
+				: searchResult.slice(0, 10).map((song) => <Poster key={song.id} song={song} chooseTrack={chooseTrack} />)}
 		</SimpleGrid>
 	);
 };

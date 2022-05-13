@@ -35,7 +35,7 @@ const Right = ({ SpotifyApi, chooseTrack }) => {
 
 	return (
 		<Flex direction="column" w="19%" display={{ base: "none", md: "flex" }} mt="3" ml={{ md: "1", lg: "5" }}>
-			<Flex justify="space-between">
+			<Flex justify="space-around">
 				<Flex>
 					{/* Left */}
 					<Flex
@@ -63,7 +63,7 @@ const Right = ({ SpotifyApi, chooseTrack }) => {
 			<Flex direction="column" h="600px" mt="5" rounded="10px" bg="blackAlpha.300" color="gray.200">
 				<Flex align="center" justify="space-between" mt="3" mb="5" mx="3">
 					<Text fontWeight="bold" fontSize={{ md: "9pt", lg: "12pt" }}>
-						Recently Played
+						Bài vừa phát
 					</Text>
 					<HiViewGrid fontSize="15pt" />
 				</Flex>

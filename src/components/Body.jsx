@@ -72,7 +72,7 @@ const Body = ({ spotify, chooseTrack }) => {
 		<Flex direction="column" w={{ base: "90%", md: "70%" }} ml={{ base: "10px", md: "80px", lg: "100px" }}>
 			<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 			<BeautyBox searchResult={searchResult} newRelease={newRelease} chooseTrack={chooseTrack} />
-			<Flex direction={{ base: "column", md: "row" }}>
+			<Flex justify="space-around">
 				<Genres />
 				<TrackWeek searchResult={searchResult} newRelease={newRelease} chooseTrack={chooseTrack} />
 				{/* <Recent /> */}
